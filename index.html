@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Garnier</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/style.css" >
+  </head>
+  <body>
+    <div class="es-garnier" id="es-garnier">
+      <div class="es-kv">
+        <h2 class="es-kv__title">
+          Hyaluron Barier Repair <br> WIĘCEJ NIŻ NAWILŻENIE: <br>Odkryj nasze nowe serum odbudowujące
+        </h2>
+        <div class="es-kv__photo">
+          <img src="./images/kv-photo.png" alt="" class="es-kv__photoimg" >
+        </div>
+        <div class="es-kv__logo">
+          <img src="./images/Logo-Garnier-small.png" alt="" class="es-kv__img" >
+        </div>
+        <div class="es-kv__packshot">
+          <img src="./images/packshot.png" alt="" class="es-kv__packshot--photo">
+        </div>
+        <div class="es-kv__ingredient">
+          <img src="./images/ingredient.png" alt="" class="es-kv__ingredient--photo">
+        </div>
+      </div>
+
+      <div class="es-benefits">
+        <h3 class="es-benefits__title">
+          Skóra jest <span class="es-benefits__bold">jędrniejsza<sup>2</sup>, gładsza i&nbsp;bardziej miękka<sup>3</sup>.</span>
+        </h3>
+        <div class="es-benefits__wrapper">
+          <div class="es-benefits__item">
+            <div class="es-benefits__wrapper1">
+              <p class="es-benefits__text1">PO</p> <img src="./images/icon-1.png" alt="" class="es-benefits__img"><p class="es-benefits__text1">Godzinie</p>
+            </div>
+            <p class="es-benefits__text">Skóra jest ujędrniona, a&nbsp;bariera ochronna wzmocniona<sup>1</sup>.</p>
+          </div>
+          <div class="es-benefits__item">
+            <div class="es-benefits__wrapper1">
+              <p class="es-benefits__text1">OD</p> <img src="./images/icon-2.png" alt="" class="es-benefits__img"><p class="es-benefits__text1">dnia</p>
+            </div>
+            <p class="es-benefits__text">Zaczyna się odbudowa bariery ochronnej<sup>1</sup>.</p>
+          </div>
+        </div>
+        <div class="es-ba__wrapper">
+          <img src="./images/benefits.png" alt="" class="es-ba__img">
+        </div>
+
+      </div>
+
+      <div class="es-ba">
+        <p class="es-ba__title">Intensywne nawilżenie dzięki <span class="es-ba__bolded">kwasowi hialuronowemu</span></p>
+        <div class="es-ba__container">
+          <div class="es-ba__wrapper">
+            <img src="./images/ba.png" alt="" class="es-ba__img">
+            <div class="es-ba__subtitle">
+              <p class="es-ba__text">przed</p>
+              <p class="es-ba__text">po</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-formula">
+        <p class="es-formula__title">Skuteczna formuła</p>
+        <div class="es-formula__wrapper">
+          <img src="./images/ingredient.png" alt="" class="es-formula__img">
+          <div class="es-formula__item es-formula__item--1">
+            SKWALAN
+            <img src="./images/line-1.png" alt="" class="es-formula__line es-formula__line--1">
+          </div>
+          <div class="es-formula__item es-formula__item--2">
+            Ekstrakt<br>z aloesu
+            <img src="./images/line-2.png" alt="" class="es-formula__line es-formula__line--2">
+          </div>
+          <div class="es-formula__item es-formula__item--3">
+            Pantenol
+            <img src="./images/line-3.png" alt="" class="es-formula__line es-formula__line--3">
+          </div>
+          <div class="es-formula__item es-formula__item--4">
+            Kwas<br>hialuronowy
+            <img src="./images/line-4.png" alt="" class="es-formula__line es-formula__line--4">
+          </div>
+        </div>
+        <div class="es-formula__container">
+          <p class="es-formula__toggle-button" onclick="esToggleContent()">Dowiedz się więcej
+            <img id="es-toggleIcon" src="./images/CollapseArrow.png" alt="" class="es-formula__arrow">
+          </p>
+          <div id="es-moreContent" class="es-formula__moreContent es-formula__hidden">
+            <div class="es-formula__item1">
+              <p class="es-formula__subtitle">Kwas hialuronowy</p>
+              <p class="es-formula__text">Pozyskiwany biotechnologiczne, potężny składnik nawilżający, który jest zdolny związać 1000x więcej wody niż sam waży.</p>
+            </div>
+            <div class="es-formula__item1">
+              <p class="es-formula__subtitle">pantenol</p>
+              <p class="es-formula__text">Wspomaga naprawę bariery ochronnej skóry, aby&nbsp;zapobiec utracie wody.</p>
+            </div>
+            <div class="es-formula__item1">
+              <p class="es-formula__subtitle">SKWALAN</p>
+              <p class="es-formula__text">Znany z własciwości wzmacniających barierę ochronną skóry.</p>
+            </div>
+            <div class="es-formula__item1">
+              <p class="es-formula__subtitle">EKSTRAKT Z ALOESU</p>
+              <p class="es-formula__text">Składnik, który intensywnie nawilża skórę.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-use">
+        <div class="es-use__imageWrapper">
+          <img src="./images/use.png" alt="" class="es-use__img">
+          <div class="es-use__top">
+            <div class="es-use__topWrap">
+              <div class="es-use__title">Rutyna<br>pielęgnacyjna</div>
+              <img src="./images/ampm.png" alt="" class="es-use__ampm">
+            </div>
+          </div>
+        </div>
+        <div class="es-use__wrapper">
+          <div class="es-use__item">
+            <div class="es-use__subtitle"> Krok 1</div>
+            <div class="es-use__text">
+              Nałóż serum na oczyszczoną skórę twarzy.
+            </div>
+          </div>
+          <div class="es-use__item">
+            <div class="es-use__subtitle"> Krok 2</div>
+            <div class="es-use__text">
+              Rano nałóż krem z&nbsp;filtrem przeciwsłonecznym, a&nbsp;wieczorem krem-żel nawilżający.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-cross">
+        <p class="es-cross__title">Odkryj gamę Pure Active</p>
+        <div class="es-cross__wrapper">
+          <img src="./images/cross.png" alt="" class="es-cross__img">
+          <img src="./images/1.png" class="es-cross__circle es-cross__circle--1" data-info="Esencja nawilżająca" data-link="#" alt="">
+          <img src="./images/2.png" class="es-cross__circle es-cross__circle--2" data-info="Serum odbudowujące" data-link="#" alt="">
+          <img src="./images/3.png" class="es-cross__circle es-cross__circle--3" data-info="Krem kojący" data-link="#" alt="">
+        </div>
+        <div id="es-info" class="es-cross__product"></div>
+
+        <div class="es-cross__slider">
+          <img id="es-prev" src="./images/prev.png" alt="Poprzedni" class="es-cross__arrow es-cross__arrow--prev">
+          <img id="es-next" src="./images/next.png" alt="Następny" class="es-cross__arrow es-cross__arrow--next">
+          <div id="es-product-1">
+            <div class="es-use">
+              <div class="es-use__imageWrapper">
+                <img src="./images/cross-1.png" alt="" class="es-use__img">
+                <div class="es-use__top">
+                  <p class="es-use__title">Esencja<br>nawilżająca</p>
+                </div>
+              </div>
+              <div class="es-use__wrapper">
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak działa?</div>
+                  <div class="es-use__text">
+                    Zapewnia do 100 godzin<sup>1</sup> nawilżenia i&nbsp;wspomaga odbudowę bariery ochronnej skóry.
+                  </div>
+                </div>
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak używać?</div>
+                  <div class="es-use__text">
+                    Nanieś produkt na oczyszczoną skórę twarzy za&nbsp;pomocą dłoni lub wacika.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="es-product-2">
+            <div class="es-use">
+              <div class="es-use__imageWrapper">
+                <img src="./images/use.png" alt="" class="es-use__img">
+                <div class="es-use__top">
+                  <p class="es-use__title">Serum<br>odbudowujące</p>
+                </div>
+              </div>
+              <div class="es-use__wrapper">
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak działa?</div>
+                  <div class="es-use__text">
+                    Serum stworzone dla skóry wrażliwej, aby&nbsp;intensywnie nawilżyć do&nbsp;24&nbsp;godzin<sup>2</sup>, ujędrnić<sup>3</sup> i&nbsp;wzmocnić barierę ochronną skóry<sup>2</sup>.
+                  </div>
+                </div>
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak używać?</div>
+                  <div class="es-use__text">
+                    Nałóż 1 pełną pipetę na&nbsp;oczyszczoną skórę twarzy i&nbsp;okolic oczu.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="es-product-3">
+            <div class="es-use">
+              <div class="es-use__imageWrapper">
+                <img src="./images/cross-3.png" alt="" class="es-use__img">
+                <div class="es-use__top">
+                  <p class="es-use__title">Krem<br>kojący</p>
+                </div>
+              </div>
+              <div class="es-use__wrapper">
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak działa?</div>
+                  <div class="es-use__text">
+                    Nawilża do 48 godzin i&nbsp;regeneruje barierę ochronną skóry<sup>4</sup>.
+                  </div>
+                </div>
+                <div class="es-use__item">
+                  <div class="es-use__subtitle">jak używać?</div>
+                  <div class="es-use__text">
+                    Stosuj rano aby nawilżyć skórę, oraz wieczorem, aby ją&nbsp;odżywić i&nbsp;zregenerować.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="es-cross__buttonWrap">
+            <a id="es-link" href="#" target="_blank" class="es-cross__button">dodaj do koszyka</a>
+          </div>
+        </div>
+        <p class="es-cross__disclaimer">
+          <sup>1</sup>Test aparaturowy, 24 osoby.<br>
+          <sup>2</sup> Badanie kliniczne, 40 osób.<br>
+          <sup>3</sup> Test konsumencki, 48 osób.
+        </p>
+      </div>
+
+      <div class="es-logo">
+        <img src="./images/logo-garnier-big.png" alt="" class="es-logo__img">
+      </div>
+
+      <div class="es-logos">
+        <img src="./images/logo-Cruelty-Free.png" alt=""  class="es-logos__img es-logos__img--cruelty">
+        <img src="./images/logo-vegan.png" alt=""  class="es-logos__img  es-logos__img--vegan">
+      </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
