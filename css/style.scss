@@ -301,6 +301,9 @@ $turkus: #469B92;
       padding-bottom: 50px;
       max-width: 70%;
     }
+    &__moreContent {
+    
+    }
     &__container {
       width: 100%;
       background-color: #fff;
@@ -432,11 +435,14 @@ $turkus: #469B92;
     margin: 0 auto;
     width: 100%;
     background-color: #fff;
-    padding: 0;
+    padding: 15px;
+    &__bolded {
+      font-weight: 700;
+    }
     &__wrapper {
       width: 100%;
       margin: 0 auto;
-      padding: 0 15px;
+      padding: 0;
       position: relative;
     }
     &__title {
@@ -445,8 +451,18 @@ $turkus: #469B92;
       text-align: center;
       text-transform: uppercase;
       color: $text;
-      font-weight: 700;
+      font-weight: 300;
       font-size: 25px;
+      background-color: #1AA0CB;
+    }    
+    &__subtitle {
+      @include text;
+      padding: 20px;
+      text-align: center;
+      color: $text;
+      font-weight: 300;
+      font-size: 22px;
+      background-color: #1AA0CB;
     }
     &__img {
       @include img;
@@ -520,7 +536,7 @@ $turkus: #469B92;
     &__disclaimer {
       @include text;
       color: #044B72;
-      font-size: 11px;
+      font-size: 8px;
       font-weight: 400;
       text-align: center;
       padding: 40px 15px 0;
@@ -590,6 +606,9 @@ $turkus: #469B92;
   }
 
   @media screen and (min-width: 415px) {
+    .es-kv {
+
+    }
     .es-formula {
       &__line {
         &--1 {
@@ -652,7 +671,10 @@ $turkus: #469B92;
     }
     .es-cross {
       &__title {
-        padding: 20px 20px 35px;
+        padding: 20px 20px 0;
+      }
+      &__wrapper {
+
       }
       &__circle{
         &--1 {
@@ -678,6 +700,9 @@ $turkus: #469B92;
 
   }
   @media screen and (min-width: 600px) {
+    .es-kv {
+
+    }
     .es-formula {
       &__item {
         &--4 {
@@ -717,6 +742,9 @@ $turkus: #469B92;
     }
   }
   @media screen and (min-width: 768px) {
+    .es-kv {
+
+    }
     .es-ba {
       &__container {
         margin: 0 auto;
