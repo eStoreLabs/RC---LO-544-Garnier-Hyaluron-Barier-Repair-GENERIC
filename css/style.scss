@@ -44,12 +44,14 @@ $turkus: #469B92;
   h5 {
     font-family: $regular;
   }
+
   .es-kv {
     margin: 0;
     padding: 0;
     position: relative;
+
     &__title {
-      background-color: rgba(26,160,203,0.8);
+      background-color: rgba(26, 160, 203, 0.8);
       position: absolute;
       width: 100%;
       bottom: 0;
@@ -62,11 +64,13 @@ $turkus: #469B92;
       font-weight: 700;
       z-index: 4;
     }
+
     &__photo {
       width: 100%;
       height: 100%;
       z-index: -1;
     }
+
     &__photoimg {
       @include img;
       z-index: -1;
@@ -80,6 +84,7 @@ $turkus: #469B92;
       animation: slideleft 1s ease forwards;
       z-index: 3;
     }
+
     &__packshot {
       position: absolute;
       bottom: 53px;
@@ -87,11 +92,13 @@ $turkus: #469B92;
       width: 15%;
       animation: slideleft 2s ease forwards;
       z-index: 2;
+
       &--photo {
         @include img;
 
       }
     }
+
     &__ingredient {
       position: absolute;
       bottom: 53px;
@@ -99,10 +106,12 @@ $turkus: #469B92;
       width: 55%;
       animation: slideleft 1s ease forwards;
       z-index: 1;
+
       &--photo {
         @include img;
       }
     }
+
     &__img {
       max-width: 100%;
       display: block;
@@ -118,6 +127,7 @@ $turkus: #469B92;
     padding: 0;
     background: rgba(26, 160, 203, 1);
     width: 100%;
+
     &__title {
       width: 100%;
       @include text;
@@ -127,6 +137,7 @@ $turkus: #469B92;
       font-weight: 300;
       font-size: 18px;
     }
+
     &__wrapper {
       margin: 12px auto 22px;
       width: 100%;
@@ -134,6 +145,7 @@ $turkus: #469B92;
       flex-wrap: wrap;
       align-items: flex-start;
     }
+
     &__wrapper1 {
       margin: 0 auto;
       display: flex;
@@ -142,28 +154,34 @@ $turkus: #469B92;
       align-self: center;
       justify-content: center;
     }
+
     &__item {
       margin: 0 auto;
       min-width: 250px;
       max-width: 454px;
       padding: 10px 20px;
       text-align: center;
+
       &:hover {
         transition: all 0.3s;
+
         .es-benefits__img {
           animation: pulse 1s infinite;
-          
+
         }
+
         .es-benefits__text {
           transform: scale(1.1);
         }
       }
     }
+
     &__img {
       @include text;
       width: 32px;
       transition: all 0.3s;
     }
+
     &__text {
       @include text;
       color: $text;
@@ -173,6 +191,7 @@ $turkus: #469B92;
       padding-top: 10px;
       padding-bottom: 10px
     }
+
     &__text1 {
       @include text;
       text-transform: uppercase;
@@ -181,6 +200,7 @@ $turkus: #469B92;
       color: $text;
       font-size: 20px;
     }
+
     &__bold {
       font-weight: 700;
     }
@@ -189,17 +209,24 @@ $turkus: #469B92;
   .es-ba {
     width: 100%;
     background: rgba(26, 160, 203, 1);
+
     &__wrapper {
       width: 100%;
       position: relative;
     }
+
     &__img {
       width: 100%;
       display: block;
       margin: 0 auto;
       max-height: 550px;
       object-fit: cover;
+
+      &--desktop {
+        display: none;
+      }
     }
+
     &__subtitle {
       position: absolute;
       top: 10px;
@@ -207,6 +234,7 @@ $turkus: #469B92;
       display: flex;
       justify-content: space-between;
     }
+
     &__text {
       @include text;
       display: block;
@@ -216,6 +244,7 @@ $turkus: #469B92;
       text-transform: uppercase;
       padding: 10px 30px;
     }
+
     &__title {
       width: 100%;
       @include text;
@@ -226,6 +255,7 @@ $turkus: #469B92;
       font-size: 27px;
       padding: 52px 20px;
     }
+
     &__bolded {
       font-weight: 700;
     }
@@ -234,57 +264,70 @@ $turkus: #469B92;
   .es-formula {
     &__wrapper {
       position: relative;
+
       &:hover {
         transition: all 0.3s;
+
         .es-formula__img {
           animation: pulse3 2s infinite;
         }
       }
     }
+
     &__item {
       position: absolute;
       text-align: center;
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase;
+
       &--1 {
         top: 0;
         left: 17%;
       }
+
       &--2 {
         top: 15%;
         left: 25%;
       }
+
       &--3 {
         top: 7%;
         left: 55%;
       }
+
       &--4 {
         top: 80%;
         left: 5%;
       }
     }
+
     &__line {
       position: absolute;
+
       &--1 {
         height: 150px;
         top: 30px;
         left: 7px;
       }
+
       &--2 {
         top: 55px;
         left: 7px;
       }
+
       &--3 {
         top: 25px;
         left: 50px;
       }
+
       &--4 {
         width: 80px;
         top: -50px;
         left: 86px;
       }
     }
+
     &__title {
       width: 100%;
       @include text;
@@ -294,6 +337,7 @@ $turkus: #469B92;
       font-weight: 700;
       font-size: 27px;
     }
+
     &__img {
       @include img;
       margin: 0 auto;
@@ -301,18 +345,18 @@ $turkus: #469B92;
       padding-bottom: 50px;
       max-width: 70%;
     }
-    &__moreContent {
-    
-    }
+
     &__container {
       width: 100%;
       background-color: #fff;
       border-top: 2px solid #044B72;
       border-bottom: 2px solid #044B72;
     }
+
     &__hidden {
       display: none;
     }
+
     &__toggle-button {
       padding-right: 15px;
       cursor: pointer;
@@ -322,15 +366,18 @@ $turkus: #469B92;
       text-transform: uppercase;
       color: #044B72;
     }
+
     &__arrow {
       width: 25px;
       height: 25px;
       margin-left: 12px;
       transition: transform 1s ease;
     }
+
     &__rotated {
       transform: rotate(180deg);
     }
+
     &__subtitle {
       @include text;
       text-align: center;
@@ -340,6 +387,7 @@ $turkus: #469B92;
       text-transform: uppercase;
       padding: 10px;
     }
+
     &__text {
       @include text;
       margin: 0 auto;
@@ -357,37 +405,44 @@ $turkus: #469B92;
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+
     &:hover {
       .es-use__ampm {
         animation: pulse2 2s infinite;
       }
     }
+
     &__ampm {
       @include img;
       display: block;
       width: 100px;
     }
+
     &__img {
       @include img;
     }
+
     &__imageWrapper {
       margin: 0 auto;
       position: relative;
       padding: 32px 0;
       max-width: 600px;
     }
+
     &__top {
       position: absolute;
       top: 50%;
       left: 30%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
     }
+
     &__topWrap {
       max-width: 200px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     &__title {
       @include text;
       text-align: center;
@@ -397,6 +452,7 @@ $turkus: #469B92;
       font-size: 14px;
       color: #044B72;
     }
+
     &__wrapper {
       display: flex;
       width: 100%;
@@ -405,11 +461,13 @@ $turkus: #469B92;
       gap: 0 10px;
       flex-wrap: wrap;
     }
+
     &__item {
       border: 1px solid #1AA0CB;
       width: 100%;
       max-width: 600px;
     }
+
     &__subtitle {
       @include text;
       padding: 10px 0;
@@ -420,6 +478,7 @@ $turkus: #469B92;
       background-color: #1AA0CB;
       color: #fff;
     }
+
     &__text {
       @include text;
       padding: 25px 20px;
@@ -436,15 +495,18 @@ $turkus: #469B92;
     width: 100%;
     background-color: #fff;
     padding: 15px;
+
     &__bolded {
       font-weight: 700;
     }
+
     &__wrapper {
       width: 100%;
       margin: 0 auto;
       padding: 0;
       position: relative;
     }
+
     &__title {
       @include text;
       padding: 20px;
@@ -454,7 +516,8 @@ $turkus: #469B92;
       font-weight: 300;
       font-size: 25px;
       background-color: #1AA0CB;
-    }    
+    }
+
     &__subtitle {
       @include text;
       padding: 20px;
@@ -464,24 +527,30 @@ $turkus: #469B92;
       font-size: 22px;
       background-color: #1AA0CB;
     }
+
     &__img {
       @include img;
     }
-    &__circle{
+
+    &__circle {
       cursor: pointer;
       position: absolute;
       bottom: -20px;
+
       &--1 {
-       left: 20%; 
+        left: 20%;
       }
+
       &--2 {
-        left: 38%; 
+        left: 38%;
       }
+
       &--3 {
-        left: 60%; 
-      } 
- 
+        left: 60%;
+      }
+
     }
+
     &__product {
       @include text;
       padding: 45px 15px 15px;
@@ -489,9 +558,11 @@ $turkus: #469B92;
       color: #044B72;
       text-align: center;
     }
+
     &__buttonWrap {
       padding: 0 30px;
     }
+
     &__button {
       @include text;
       width: 100%;
@@ -509,6 +580,7 @@ $turkus: #469B92;
       text-transform: uppercase;
       display: block;
       transition: all 0.5s;
+
       &:hover {
         background: $bgcolor;
         border-radius: 15px;
@@ -516,23 +588,28 @@ $turkus: #469B92;
         border: 1px solid #000;
       }
     }
+
     &__slider {
       position: relative;
       margin: 0 auto;
     }
+
     &__arrow {
       width: 40px;
       position: absolute;
       cursor: pointer;
       z-index: 1;
       top: 175px;
+
       &--prev {
         left: -1%;
       }
+
       &--next {
         right: -1%;
       }
     }
+
     &__disclaimer {
       @include text;
       color: #044B72;
@@ -547,7 +624,7 @@ $turkus: #469B92;
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+  }
 
   .es-pagination-dot {
     width: 10px;
@@ -557,21 +634,23 @@ $turkus: #469B92;
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
+  }
 
   .es-pagination-dot.active {
     background-color: #000;
-}
+  }
 
   .es-logo {
     margin: 0 auto;
     width: 100%;
     background-color: $white;
+
     &__img {
       @include img;
       width: 50%;
       min-width: 250px;
       transition: 0.5s all;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -589,16 +668,20 @@ $turkus: #469B92;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
+
     &__img {
       @include img;
       height: 100%;
       transition: 0.5s all;
+
       &:hover {
         transform: scale(1.1);
       }
+
       &--cruelty {
         aspect-ratio: 231/52;
       }
+
       &--vegan {
         aspect-ratio: 199/62;
       }
@@ -606,9 +689,7 @@ $turkus: #469B92;
   }
 
   @media screen and (min-width: 415px) {
-    .es-kv {
 
-    }
     .es-formula {
       &__line {
         &--1 {
@@ -618,15 +699,18 @@ $turkus: #469B92;
         }
       }
     }
+
     .es-use {
       &__title {
         font-size: 18px;
       }
+
       &__ampm {
         width: 140px;
       }
     }
   }
+
   @media screen and (min-width: 500px) {
     .es-kv {
       &__title {
@@ -634,34 +718,40 @@ $turkus: #469B92;
         padding: 15px 15px;
         font-size: 18px;
       }
+
       &__packshot {
         bottom: 94px;
         right: 25%;
         width: 15%;
       }
+
       &__ingredient {
         bottom: 94px;
         right: -10%;
         width: 55%;
       }
     }
+
     .es-formula {
       &__item {
         &--1 {
           top: 0;
           left: 18%;
         }
+
         &--4 {
           top: 80%;
           left: 8%;
         }
       }
+
       &__line {
         &--1 {
           height: 220px;
           top: 30px;
           left: 7px;
         }
+
         &--4 {
           width: 100px;
           top: -60px;
@@ -669,40 +759,43 @@ $turkus: #469B92;
         }
       }
     }
+
     .es-cross {
       &__title {
         padding: 20px 20px 0;
       }
-      &__wrapper {
 
-      }
-      &__circle{
+      &__circle {
         &--1 {
-         left: 21%; 
+          left: 21%;
         }
+
         &--2 {
-          left: 40%; 
+          left: 40%;
         }
+
         &--3 {
-          left: 64%; 
-        } 
+          left: 64%;
+        }
       }
+
       &__arrow {
         top: 240px;
+
         &--prev {
           left: -1%;
         }
+
         &--next {
           right: -1%;
         }
-      }  
+      }
     }
 
   }
-  @media screen and (min-width: 600px) {
-    .es-kv {
 
-    }
+  @media screen and (min-width: 600px) {
+
     .es-formula {
       &__item {
         &--4 {
@@ -710,12 +803,14 @@ $turkus: #469B92;
           left: 14%;
         }
       }
+
       &__line {
         &--1 {
           height: 240px;
           top: 30px;
           left: 7px;
         }
+
         &--4 {
           width: 120px;
           height: 59px;
@@ -724,50 +819,92 @@ $turkus: #469B92;
         }
       }
     }
+
     .es-use {
       &__title {
         font-size: 25px;
       }
     }
+
     .es-cross {
       &__arrow {
         top: 295px;
+
         &--prev {
           left: -1%;
         }
+
         &--next {
           right: -1%;
         }
-      }  
+      }
     }
   }
-  @media screen and (min-width: 768px) {
-    .es-kv {
 
+  @media screen and (min-width: 768px) {
+    .es-benefits {
+      position: relative;
+
+      &__wrapper {
+        position: absolute;
+        top: 2em;
+        left: 0;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        width: 58%;
+        margin: 0;
+        padding: 0;
+      }
+
+      &__item {
+        background-color: rgba(26, 160, 203, 0.8);
+        width: 80%;
+      }
     }
+
     .es-ba {
       &__container {
         margin: 0 auto;
         width: 70%;
       }
+
+
+      &__img {
+        display: none;
+
+        &--desktop {
+          display: block;
+          object-fit: contain;
+          width: 100%;
+        }
+      }
     }
+
     .es-formula {
       &__item {
         &--3 {
           top: 7%;
           left: 65%;
         }
+
         &--4 {
           top: 84%;
           left: 18%;
         }
       }
+
       &__line {
         &--1 {
           height: 270px;
           top: 30px;
           left: 7px;
         }
+
         &--4 {
           width: 160px;
           height: 80px;
@@ -776,47 +913,58 @@ $turkus: #469B92;
         }
       }
     }
+
     .es-cross {
-      &__circle{
+      &__circle {
         &--1 {
-         left: 23%; 
+          left: 23%;
         }
+
         &--2 {
-          left: 41%; 
+          left: 41%;
         }
+
         &--3 {
-          left: 67%; 
-        }  
+          left: 67%;
+        }
       }
+
       .es-cross {
         &__arrow {
           top: 295px;
+
           &--prev {
             left: 4%;
           }
+
           &--next {
             right: 4%;
           }
-        }  
+        }
       }
+
       &__product {
         font-size: 20px;
       }
     }
   }
+
   @media screen and (min-width: 900px) {
     .es-cross {
       .es-cross {
         &__arrow {
           top: 295px;
+
           &--prev {
             left: 10%;
           }
+
           &--next {
             right: 10%;
           }
-        }  
+        }
       }
+
       &__product {
         font-size: 20px;
       }
@@ -828,40 +976,50 @@ $turkus: #469B92;
   0% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(1.4);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes pulse2 {
   0% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes pulse3 {
   0% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes slidedown {
   from {
     opacity: 0;
     transform: translateY(-32px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -873,6 +1031,7 @@ $turkus: #469B92;
     opacity: 0.3;
     transform: translateX(-100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
