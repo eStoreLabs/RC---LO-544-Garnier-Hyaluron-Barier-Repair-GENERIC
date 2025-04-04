@@ -791,7 +791,7 @@
     margin: 0 auto;
     width: 70%;
   }
-  #es-garnier.es-garnier .es-ba__img {
+  #es-garnier.es-garnier .es-ba__img--mobile {
     display: none;
   }
   #es-garnier.es-garnier .es-ba__img--desktop {
