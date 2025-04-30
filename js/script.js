@@ -1,7 +1,7 @@
 function esToggleContent() {
-  var content = document.getElementById("es-moreContent");
-  var button = document.querySelector(".es-formula__toggle-button");
-  var icon = document.getElementById("es-toggleIcon");
+  var content = document.querySelector("#es-garnier #es-moreContent");
+  var button = document.querySelector("#es-garnier .es-formula__toggle-button");
+  var icon = document.querySelector("#es-garnier #es-toggleIcon");
 
   if (content.classList.contains("es-formula__hidden")) {
       content.classList.remove("es-formula__hidden");
@@ -17,12 +17,12 @@ function esToggleContent() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const circles = document.querySelectorAll(".es-cross__circle");
-  const infoContainer = document.getElementById("es-info");
-  const linkButton = document.getElementById("es-link");
-  const products = document.querySelectorAll("[id^=es-product]");
-  const prevArrow = document.getElementById("es-prev");
-  const nextArrow = document.getElementById("es-next");
+  const circles = document.querySelectorAll("#es-garnier .es-cross__circle");
+  const infoContainer = document.querySelector("#es-garnier #es-info");
+  const linkButton = document.querySelector("#es-garnier #es-link");
+  const products = document.querySelectorAll("#es-garnier [id^=es-product]");
+  const prevArrow = document.querySelector("#es-garnier #es-prev");
+  const nextArrow = document.querySelector("#es-garnier #es-next");
   const paginationContainer = document.createElement("div");
   paginationContainer.classList.add("es-pagination");
   linkButton.parentNode.appendChild(paginationContainer);
